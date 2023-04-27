@@ -6,12 +6,15 @@ function CardListing() {
         <>
             <section>
                 <div>
-                    <label htmlFor="">
-                        Exibir
-                    </label>
-                    <input type="text" name="" id="" />
-                    <p>Itens</p>
+                    <form action="">
+                        <label htmlFor="">Exibir</label>
+                        <input type="text" name="" id="" />
+                        <label htmlFor="">Itens</label>
+                    </form>
                 </div>
+                <table>
+                    
+                </table>
             </section>
         </>
     )
