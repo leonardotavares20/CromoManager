@@ -13,7 +13,7 @@ function NavBar() {
                 <div className='SaudacaoOla'>
                     <p>Olá, <strong className='name'>{name}</strong></p>
                 </div>
-                4<div className='buttons'>
+                <div className='buttons'>
                     <button className='ButtonSucessOne'>Ir para o site</button>
                     <button className='ButtonSucessTwo'>Sair</button>
                 </div>
