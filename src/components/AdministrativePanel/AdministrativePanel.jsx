@@ -16,7 +16,7 @@ function AdministrativePanel() {
                         <li>Configurações</li>
                     </ul>
                 </div>
-                <div>
+                <div className='PainelConteudo'>
                     <div className='Conteudo'>
                         <p>Conteudo</p>
                     </div>
