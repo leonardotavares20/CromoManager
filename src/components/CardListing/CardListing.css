@@ -34,7 +34,7 @@ table {
     padding: 0px 7px;
 }
 
-input[type=text] {
+.inputExibirItens[type=text] {
     height: 34px;
     width: 66px;
     color: #21559D;

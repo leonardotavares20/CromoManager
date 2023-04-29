@@ -8,7 +8,7 @@ function CardListing() {
                 <div className='Cabecalho'>
                     <form action="">
                         <label htmlFor="">Exibir</label>
-                        <input type="text" name="" id="" />
+                        <input className='inputExibirItens' type="text" name="" id="" />
                         <label htmlFor="">Itens</label>
                     </form>
                 </div>
