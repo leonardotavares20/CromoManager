@@ -5,16 +5,18 @@ import Forms from "./components/Forms/Forms"
 import CardListing from "./components/CardListing/CardListing"
 import NavBar from '../src/components/NavBar/NavBar'
 import CardOpenCall from './components/CardOpenCall/CardOpenCall'
+import CardConfigutarion from './components/CardConfigurations/CardConfigurations'
 
 function App() {
   return (
     <>
-    <NavBar></NavBar>
-    <AdministrativePanel></AdministrativePanel>
-    <Cards></Cards>
-    <Forms></Forms>
-    <CardListing></CardListing>
-    <CardOpenCall></CardOpenCall>
+    {/* <NavBar></NavBar> */}
+    {/* <AdministrativePanel></AdministrativePanel> */}
+    {/* <Cards></Cards> */}
+    {/* <Forms></Forms> */}
+    {/* <CardListing></CardListing> */}
+    {/* <CardOpenCall></CardOpenCall> */}
+    <CardConfigutarion></CardConfigutarion>
     </>
   )
 }

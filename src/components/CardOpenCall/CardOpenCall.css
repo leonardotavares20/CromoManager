@@ -107,15 +107,15 @@ input[type='file'] {
     padding: 0px 4px;
 }
 
+.PlaceholderAnexar::placeholder {
+    color: #BEC1C6;
+    text-align: center;
+}
+
 .LabelAnexar {
     color: #21559D;
     font-weight: 700;
     font-size: 16px;
-}
-
-.PlaceholderAnexar::placeholder {
-    color: #BEC1C6;
-    text-align: center;
 }
 
 .LabelSolicitacoes {

@@ -27,8 +27,7 @@ export const InputAtivo = styled.input`
     font-family: 'Ubuntu', sans-serif;
     &::placeholder {
         padding: 27px;
-        color: #D83939;
-        font-family: 'Ubuntu', sans-serif;
+        color: #B0B1B2;
     }
 `
 
