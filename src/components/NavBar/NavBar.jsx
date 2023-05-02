@@ -1,6 +1,5 @@
-import './NavBar.css'
+// import './NavBar.css'
 export default NavBar
-import '../Buttons/Buttons.css'
 import { ContainerNavBar,
          DivLogo,
          DivSaudacao,
@@ -10,7 +9,6 @@ import { ContainerNavBar,
 import { BotaoNormal, BotaoTransparente } from '../Buttons/Buttons'
 
 function NavBar() {
-    const name = 'Wallton Coelho'
     return (
         <>
         <ContainerNavBar>
@@ -18,7 +16,7 @@ function NavBar() {
                 <img src="./logo.svg" alt="" />
             </DivLogo>
             <DivSaudacao>
-                <NomePessoa>Olá<strong>Wallton Coelho</strong></NomePessoa>
+                <NomePessoa>Olá, <strong>Wallton Coelho</strong></NomePessoa>
             </DivSaudacao>
             <ContainerBotoes>
                 <BotaoTransparente>Sair</BotaoTransparente>

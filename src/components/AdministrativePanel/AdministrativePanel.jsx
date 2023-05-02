@@ -1,32 +1,32 @@
 export default AdministrativePanel
 import './AdministrativePanel.css'
+import { PainelAdministrativo,
+         PainelMenu,
+         PainelListaMenu,
+         PainelConteudo,
+         PainelListaConteudo
+} from './style/AdministrativePanel'
 
 function AdministrativePanel() {
     return (
         <>
-            <nav className='PainelAdministrativo'>
+            <PainelAdministrativo>
                 <div>
-                    <div className='Painel'>
-                        <p>Painel</p>
-                    </div>
-                    <ul className='PainelUl'>
-                        <li>Perfil</li>
-                        <li className='active'>Serviços</li>
-                        <li>Suporte</li>
-                        <li>Configurações</li>
-                    </ul>
+                    <PainelMenu>Painel</PainelMenu>
+                    <PainelListaMenu>Perfil</PainelListaMenu>
+                    <PainelListaMenu>Serviços</PainelListaMenu>
+                    <PainelListaMenu>Suporte</PainelListaMenu>
+                    <PainelListaMenu>Configurações</PainelListaMenu>
                 </div>
-                <div className='PainelConteudo'>
-                    <div className='Conteudo'>
-                        <p>Conteudo</p>
-                    </div>
-                    <ul className='ConteudoUl'>
-                        <li>Banner</li>
-                        <li>Institucional</li>
-                        <li>Empreendimentos</li>
-                    </ul>
-                </div>
-            </nav>
+                <div>
+                    <PainelConteudo>Conteudo</PainelConteudo>
+                        <ul>
+                            <PainelListaConteudo>Banner</PainelListaConteudo> 
+                            <PainelListaConteudo>Institucional</PainelListaConteudo>  
+                            <PainelListaConteudo>Empreendimentos</PainelListaConteudo> 
+                        </ul>
+                </div> 
+            </PainelAdministrativo>
         </>
     )
 }
