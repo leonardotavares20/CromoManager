@@ -1,11 +1,12 @@
 export default Forms
-import './Forms.css'
+// import './Forms.css'
+import { InputNormal } from "./style/Forms"
 
 
 function Forms() {
     return (
         <>
-            <input className='PlaceholderTwoError' placeholder="Placeholder" type="text" name="" id="" />
+        <InputNormal placeholder="Placeholder"></InputNormal>
         </>
     )
 }
