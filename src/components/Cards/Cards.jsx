@@ -1,23 +1,26 @@
 import './Cards.css'
+import {ContainerCard, 
+        InfoCard, 
+        TituloDeAcessos,
+        UltimosDias,
+        NumeroAcessos,
+        Acessos
+} from './Style/Card'
 export default Cards
 
 function Cards()  {
     return (
         <>
-            <div className='Card'>
-                <div className='TituloAcessos'>
-                    <p>Acessos</p>
+        <ContainerCard>
+            <TituloDeAcessos>Acessos</TituloDeAcessos>
+            <InfoCard>
+                <UltimosDias>Ultimos 30 Dias</UltimosDias>
+                <div>
+                    <NumeroAcessos>1369</NumeroAcessos>
+                    <Acessos>Acessos</Acessos>
                 </div>
-                <div className='CardRest'>
-                    <div className='UltimosDias'>
-                        <p>Últimos 30 dias</p>
-                    </div>
-                    <div>
-                        <p className='NumeroAcessos'>1369</p>
-                        <p className='Acessos'>Acessos</p>
-                    </div>
-                </div>
-            </div>
-        </>
+            </InfoCard>
+        </ContainerCard>
+     </>
     )
 }
