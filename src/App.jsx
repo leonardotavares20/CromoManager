@@ -1,3 +1,4 @@
+import { BotaoNormal } from './components/Buttons/Buttons'
 import AdministrativePanel from './components/AdministrativePanel/AdministrativePanel'
 import Cards from "./components/Cards/Cards"
 import Forms from "./components/Forms/Forms"
@@ -8,11 +9,11 @@ import CardOpenCall from './components/CardOpenCall/CardOpenCall'
 function App() {
   return (
     <>
-    {/* <NavBar></NavBar> */}
-    {/* <AdministrativePanel></AdministrativePanel> */}
-    {/* <Cards></Cards>
-    <Forms></Forms> */}
-    {/* <CardListing></CardListing> */}
+    <NavBar></NavBar>
+    <AdministrativePanel></AdministrativePanel>
+    <Cards></Cards>
+    <Forms></Forms>
+    <CardListing></CardListing>
     <CardOpenCall></CardOpenCall>
     </>
   )
