@@ -10,9 +10,8 @@ import { SectionConfiguration,
          DivLogo,
          DivLogoFlex,
          InputLogo
-
-} from "./style.jsx/CardConfigurationStyle"
-import { InputAtivo } from "../Forms/style/Forms"
+} from "./style/CardConfigurationStyle"
+import { InputAtivo, InputTransparenteAtivo } from "../Forms/style/Forms"
 import { BotaoNormal, BotaoTransparente } from "../Buttons/Buttons"
 
 function CardConfigutarion() {
@@ -23,15 +22,15 @@ function CardConfigutarion() {
             <Form>
                 <DivEmail>
                         <LabelTitulo>E-mail</LabelTitulo>
-                        <InputAtivo placeholder="comerciarl@meudomio.com"></InputAtivo>
+                        <InputTransparenteAtivo placeholder="comerciarl@meudomio.com"></InputTransparenteAtivo>
                 </DivEmail>
                 <DivInstagram>
                         <LabelTitulo>Instagram</LabelTitulo>
-                        <InputAtivo placeholder="@perfi_instagram"></InputAtivo>
+                        <InputTransparenteAtivo placeholder="@perfi_instagram"></InputTransparenteAtivo>
                 </DivInstagram>
                 <DivFacebook>
                         <LabelTitulo>Facebook</LabelTitulo>
-                        <InputAtivo placeholder="@perfil_facebook"></InputAtivo>
+                        <InputTransparenteAtivo placeholder="@perfil_facebook"></InputTransparenteAtivo>
                 </DivFacebook>
                 <DivLogo>
                         <LabelTitulo>Logo do site</LabelTitulo>

@@ -6,7 +6,7 @@ import { ContainerNavBar,
          NomePessoa,
          ContainerBotoes
 } from './style/NavBar'
-import { BotaoNormal, BotaoTransparente } from '../Buttons/Buttons'
+import { BotaoNormal, BotaoTransparente} from '../Buttons/Buttons'
 
 function NavBar() {
     return (

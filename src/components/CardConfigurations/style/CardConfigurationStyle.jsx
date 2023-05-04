@@ -79,15 +79,15 @@ export const LabelTitulo = styled.label`
 `
 
 export const InputLogo = styled.input`
-    background: #EEF0F8;
+    height: 45px;
     border-radius: 4px;
     font-size: 14px;
-    height: 45px;
-    border: 1px solid #3B70BB80;
+    border: 2px solid #1A60C3;
     font-family: 'Ubuntu', sans-serif;
     &::placeholder {
         text-align: center;
-        color: #B0B1B2;
+        color: #1A60C3;
+        font-family: 'Ubuntu', sans-serif;
     }
 `
 
