@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SwitchLabel = styled.label`
+export const SwitchLabelComponent = styled.label`
     position: relative;
     display: inline-block;
     width: 79px;
@@ -12,7 +12,7 @@ export const SwitchLabel = styled.label`
     }
 `
 
-export const Slider = styled.span`
+export const SliderComponent = styled.span`
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -37,5 +37,5 @@ export const Slider = styled.span`
     }
 `
 
-export const Input = styled.input`
+export const InputComponent = styled.input`
 `

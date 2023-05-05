@@ -8,6 +8,7 @@ import CardOpenCall from './components/CardOpenCall/CardOpenCall'
 import CardConfigutarion from './components/CardConfigurations/CardConfigurations'
 import SwitchButton from './components/SwitchButton/Switch'
 import CardListBanner from './components/CardListBanner/CardListBanner'
+import SwitchButtonComponent from './components/SwitchButtonComponent/Switch'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <CardOpenCall></CardOpenCall> */}
     {/* <CardConfigutarion></CardConfigutarion> */}
     {/* <SwitchButton></SwitchButton> */}
+    {/* <SwitchButtonComponent></SwitchButtonComponent> */}
     <CardListBanner></CardListBanner>
     </>
   )

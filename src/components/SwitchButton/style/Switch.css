@@ -1,6 +1,7 @@
 /* Aqui esta a interacao do botao */
   .input:checked + .slider::before {
-    background-color: #D9D9D9;
+    background-color: #1A60C3;
+    
   }
   
   .input:focus + .slider {
@@ -12,8 +13,6 @@
     -ms-transform: translateX(66px);
     transform: translateX(66px);
   }
-  
-
 
 
 

@@ -1,5 +1,5 @@
 export default SwitchButton
-import { SwitchLabel, Input, Slider} from "./style/Switch"
+import { SwitchLabel, Input, Slider, SpanArquivar} from "./style/Switch"
 import './style/Switch.css'
 
 
@@ -17,7 +17,7 @@ function SwitchButton() {
     return (
         <>
         <SwitchLabel className="label" onClick={changeOpacity}>
-            <span className="arquivar">Arquivar</span>
+          <SpanArquivar className="arquivar">Arquivar</SpanArquivar>
             <Input className="input" type="checkbox" />
             <Slider className="slider" />
         </SwitchLabel>

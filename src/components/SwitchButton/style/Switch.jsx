@@ -33,7 +33,7 @@ export const Slider = styled.span`
         width: 35px;
         left: 8px;
         bottom: 7px;
-        background-color: #1A60C3;
+        background-color: #D9D9D9;
         -webkit-transition: .4s;
         transition: .4s;
         border-radius: 22px;
@@ -41,4 +41,8 @@ export const Slider = styled.span`
 `
 
 export const Input = styled.input`
+`
+
+export const SpanArquivar = styled.span`
+    transition: .3s;
 `

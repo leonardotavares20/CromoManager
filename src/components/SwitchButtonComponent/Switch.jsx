@@ -1,14 +1,14 @@
-export default SwitchButton
-import { SwitchLabel, Input, Slider} from "./style/Switch"
+export default SwitchButtonComponent
+import { SwitchLabelComponent, InputComponent, SliderComponent} from "./style/Switch"
 import './style/Switch.css'
 
-function SwitchButton() {
+function SwitchButtonComponent() {
     return (
         <>
-        <SwitchLabel className="label">
-            <Input className='input' type='checkbox'></Input>
-            <Slider className='slider'></Slider>
-        </SwitchLabel>
+        <SwitchLabelComponent className="label">
+            <InputComponent className='inputComponent' type='checkbox'></InputComponent>
+            <SliderComponent className='sliderComponent'></SliderComponent>
+        </SwitchLabelComponent>
         </>
     )
 }

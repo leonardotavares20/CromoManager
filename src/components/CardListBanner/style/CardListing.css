@@ -11,13 +11,10 @@
     box-sizing: border-box;
 }
 
-table {
+.table {
     border-collapse: collapse;
-    max-width: 100%; 
-}
-
-.TableOver {
     overflow-x: auto;
+    min-width: 800px;
 }
 
 .Cabecalho {
@@ -29,19 +26,9 @@ table {
     font-weight: 700;
 }
 
-.Cabecalho label {
-    padding: 0px 7px;
-}
-
-td, th {
-    text-align: center;
-    font-size: 16px;
-}
-
 td {
     padding: 5px 0px 5px 0px;
 }
-
 
 tr:nth-child(even) {
     background-color: #D8E3F133;
@@ -49,9 +36,6 @@ tr:nth-child(even) {
 
 tbody>tr>:nth-child(1) {
     background-color: #D8E3F180;
-}
-
-tbody>tr>:nth-child(1) {
     text-align: start;
     text-align: center;
     width: 56px;
@@ -121,5 +105,3 @@ th:nth-child(5) {
     text-align: start;
     padding-left: 95px;
 }
-
-
