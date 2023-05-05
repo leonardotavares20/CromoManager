@@ -1,90 +1,118 @@
 export default CardListing
-import './CardListing.css'
+import { TableList,
+         Cabecalho,
+         CabecalhoLabel,
+         CabecalhoInput,
+         TableConfig,
+         TableOverflow,
+         TBody,
+         THead,
+         TableHead,
+         TableData,
+         TableRow } 
+from './style/CardListing'
 
 function CardListing() {
+    const dados = [
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Aguardando sua resposta', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    }, 
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },  
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+
+                    { 
+                        Ticket: 368711 , 
+                        Assunto: 'E-mail', 
+                        Status: 'Em tratamento', 
+                        UltimaInteracao: '22/04/2023 11:07'
+                    },
+                ];
     return(
         <>
-            <section className='CardListing'>
-                <div className='Cabecalho'>
-                    <form action="">
-                        <label htmlFor="">Exibir</label>
-                        <input className='inputExibirItens' type="text" name="" id="" />
-                        <label htmlFor="">Itens</label>
-                    </form>
-                </div>
-                <div className='TableOver'>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>Ticket</th>
-                                <th>Assunto</th>
-                                <th>Status</th>
-                                <th>Última interação</th>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Aguardando sua resposta</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Em tratamento</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                            <tr>
-                                <td>368711</td>
-                                <td>Email</td>
-                                <td>Resolvido</td>
-                                <td>22/01/2023 11:07</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+        <TableList>
+            <Cabecalho>
+                <CabecalhoLabel>Exibir</CabecalhoLabel>
+                <CabecalhoInput></CabecalhoInput>
+                <CabecalhoLabel>Itens</CabecalhoLabel>
+            </Cabecalho>
+            <TableOverflow>
+                <TableConfig>
+                    <THead>
+                        <TableHead>Ticket</TableHead>
+                        <TableHead>Assunto</TableHead>
+                        <TableHead>Status</TableHead>
+                        <TableHead>Última interação</TableHead>
+                    </THead>
+                    <TBody>
+                        {dados.map(({Ticket, Assunto, Status, UltimaInteracao }) => (
+                            <TableRow key={Ticket}>
+                                <TableData>{Ticket}</TableData>
+                                <TableData>{Assunto}</TableData>
+                                <TableData>{Status}</TableData>
+                                <TableData>{UltimaInteracao}</TableData>
+                            </TableRow>
+                        ))} 
+                    </TBody>
+                </TableConfig>
+            </TableOverflow>
+        </TableList>
         </>
     )
 }

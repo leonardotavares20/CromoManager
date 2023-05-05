@@ -21,11 +21,9 @@ export const Cabecalho = styled.div`
 
 export const TableConfig = styled.table`
     border-collapse: collapse;
-    min-width: 800px;
     overflow-x: auto;
 `
 export const TBody = styled.tbody`
-    overflow-x: auto;
 `
 
 export const TableData = styled.td`
@@ -82,7 +80,7 @@ export const THead = styled.thead``
 export const TableHead = styled.th`
     font-weight: 700;
     max-width: 100%;
-    padding: 7px 0px 7px 0px;
+    padding: 14px 0px 21px 0px;
     color: #21559D;
     &:nth-child(1) {
         background-color: #D8E3F180; 

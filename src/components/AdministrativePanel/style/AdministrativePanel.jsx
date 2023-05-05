@@ -70,7 +70,26 @@ export const PainelListaConteudo = styled.li`
     color: #0a2f62;
     font-size: 14px;
     font-weight: 400;
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
     padding: 21px 0px 23px 51px;
     margin-left: -40px;
+`
+
+export const SpanSeta = styled.span`
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 15px;
+        color: #1A60C3;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr; 
+        cursor: pointer;
 `

@@ -11,7 +11,7 @@ import { SectionConfiguration,
          DivLogoFlex,
          InputLogo
 } from "./style/CardConfigurationStyle"
-import { InputAtivo, InputTransparenteAtivo } from "../Forms/style/Forms"
+import { InputTransparenteAtivo } from "../Forms/style/Forms"
 import { BotaoNormal, BotaoTransparente } from "../Buttons/Buttons"
 
 function CardConfigutarion() {

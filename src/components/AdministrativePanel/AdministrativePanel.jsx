@@ -1,10 +1,11 @@
 export default AdministrativePanel
-import './AdministrativePanel.css'
+// import './AdministrativePanel.css'
 import { PainelAdministrativo,
          PainelMenu,
          PainelListaMenu,
          PainelConteudo,
-         PainelListaConteudo
+         PainelListaConteudo,
+         SpanSeta
 } from './style/AdministrativePanel'
 
 function AdministrativePanel() {
@@ -21,9 +22,9 @@ function AdministrativePanel() {
                 <div>
                     <PainelConteudo>Conteudo</PainelConteudo>
                         <ul>
-                            <PainelListaConteudo>Banner</PainelListaConteudo> 
-                            <PainelListaConteudo>Institucional</PainelListaConteudo>  
-                            <PainelListaConteudo>Empreendimentos</PainelListaConteudo> 
+                            <PainelListaConteudo>Banner<SpanSeta >arrow_forward_ios</SpanSeta></PainelListaConteudo> 
+                            <PainelListaConteudo>Institucional<SpanSeta >arrow_forward_ios</SpanSeta></PainelListaConteudo>  
+                            <PainelListaConteudo>Empreendimentos<SpanSeta >arrow_forward_ios</SpanSeta></PainelListaConteudo> 
                         </ul>
                 </div> 
             </PainelAdministrativo>
