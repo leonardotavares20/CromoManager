@@ -55,6 +55,7 @@ export const PainelConteudo = styled.div`
     margin-bottom: 10px;
     position: relative;
     font-weight: 400;
+    overflow-y: auto;
     &:before {
         content: '';
         position: absolute;
@@ -66,30 +67,61 @@ export const PainelConteudo = styled.div`
     }
 `
 
-export const PainelListaConteudo = styled.li`
+
+export const SpanSeta = styled.span`
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    color: #1A60C3;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr; 
+    transition: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    left: 250px;
+    .rotate {
+        transform: rotate(90deg);
+        transition: transform 0.2s ease-in-out;
+    }
+    :hover {
+        /* transform: rotate(90deg); */
+    }
+`
+
+export const Ul = styled.ul`
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    &.panel.active {
+        max-height: 500px;
+        transition: max-height 0.6s ease-in;
+    }
+`
+
+export const Li = styled.li`
+    color: black;
+    margin-left: -35px;
+`
+export const PainelListaConteudo = styled.ul`
     color: #0a2f62;
     font-size: 14px;
     font-weight: 400;
-    width: 251px;
+    position: relative;
+    width: 280px;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
     padding: 21px 0px 23px 51px;
     margin-left: -40px;
-`
-
-export const SpanSeta = styled.span`
-        font-family: 'Material Icons';
-        font-weight: normal;
-        font-style: normal;
-        font-size: 15px;
-        color: #1A60C3;
-        display: inline-block;
-        line-height: 1;
-        text-transform: none;
-        letter-spacing: normal;
-        word-wrap: normal;
-        white-space: nowrap;
-        direction: ltr; 
-        cursor: pointer;
+    background-color: #F5F5F5;
+    border: none;
+    transition: .4s;
+    transition: 1s;
+    list-style-type: none;
 `

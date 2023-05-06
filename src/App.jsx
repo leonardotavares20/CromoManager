@@ -13,7 +13,7 @@ import SwitchButtonComponent from './components/SwitchButtonComponent/Switch'
 function App() {
   return (
     <>
-    <NavBar></NavBar>
+    {/* <NavBar></NavBar> */}
     <AdministrativePanel></AdministrativePanel>
     {/* <Cards></Cards> */}
     {/* <Forms></Forms> */}
