@@ -7,11 +7,18 @@ import {
   PainelListaConteudo,
   SpanSeta,
   Ul,
-  Li
+  Li,
+  LiNormal,
+  RadioInput,
+  DivNormal,
+  UlNormal
 } from './style/AdministrativePanel';
-import './style/AdministrativePanel.css';
+export default AdministrativePanel
 
 function AdministrativePanel() {
+
+  // Funcão para o menu conteudo
+  
   const [panels, setPanels] = useState({
     banner: false,
     institucional: false,
@@ -27,60 +34,68 @@ function AdministrativePanel() {
 
   return (
     <PainelAdministrativo>
-      <div>
+      <DivNormal>
         <PainelMenu>Painel</PainelMenu>
-        <PainelListaMenu>Perfil</PainelListaMenu>
-        <PainelListaMenu>Serviços</PainelListaMenu>
-        <PainelListaMenu>Suporte</PainelListaMenu>
-        <PainelListaMenu>Configurações</PainelListaMenu>
-      </div>
-      <div>
+        <PainelListaMenu> Perfil </PainelListaMenu>
+        <PainelListaMenu> Serviços </PainelListaMenu>
+        <PainelListaMenu> Suporte </PainelListaMenu>
+        <PainelListaMenu> Configurações </PainelListaMenu>
+      </DivNormal>
+      <DivNormal>
         <PainelConteudo>Conteudo</PainelConteudo>
-        <ul>
+        <UlNormal>
           <PainelListaConteudo className="accordion">
-            <li>
+            <LiNormal>
               Banner
               <SpanSeta className={panels.banner ? "active" : ""} onClick={() => togglePanel("banner")} >
                 <i className="material-icons">
-                    {panels.banner ? "arrow_drop_down" : "arrow_right"}
+                    {panels.banner ? "expand_more" : "chevron_right"}
                 </i>
               </SpanSeta>
+
               <Ul className={`panel ${panels.banner ? "active" : ""}`}>
-                <Li>Listar</Li>
-                <Li>Cadastrar</Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Listar Banner </Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Cadastrar Banner </Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Listar Categoria </Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Cadastrar Categoria </Li>
               </Ul>
-            </li>
+            </LiNormal>
           </PainelListaConteudo>
+
           <PainelListaConteudo className="accordion">
-            <li>
+            <LiNormal>
               Institucional
               <SpanSeta className={panels.institucional ? "active" : ""} onClick={() => togglePanel("institucional")} >
                 <i className="material-icons">
-                    {panels.institucional ? "arrow_drop_down" : "arrow_right"}
+                    {panels.institucional ? "expand_more" : "chevron_right"}
                 </i>
               </SpanSeta>
+
               <Ul className={`panel ${panels.institucional ? "active" : ""}`}>
-                <Li>Cadastrar</Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Sobre </Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Números </Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Controle de qualidade </Li>
               </Ul>
-            </li>
+            </LiNormal>
           </PainelListaConteudo>
+
           <PainelListaConteudo className="accordion">
-            <li>
+            <LiNormal>
               Empreendimentos
               <SpanSeta className={panels.empreendimentos ? "active" : ""} onClick={() => togglePanel("empreendimentos")} >
                 <i className="material-icons">
-                    {panels.empreendimentos ? "arrow_drop_down" : "arrow_right"}
+                    {panels.empreendimentos ? "expand_more" : "chevron_right"}
                 </i>
               </SpanSeta>
+
               <Ul className={`panel ${panels.empreendimentos ? "active" : ""}`}>
-                <Li>Ola</Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Listar </Li>
+                <Li> <RadioInput type='radio' disabled></RadioInput> Cadastrar </Li>
               </Ul>
-            </li>
+            </LiNormal>
           </PainelListaConteudo>
-        </ul>
-      </div>
+        </UlNormal>
+      </DivNormal>
     </PainelAdministrativo>
   );
 }
-
-export default AdministrativePanel;

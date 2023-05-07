@@ -7,11 +7,10 @@ export const PainelAdministrativo = styled.nav`
     flex-direction: column;
     align-self: flex-start;
     width: 370px;
-    height: calc(100vh - 81px);
+    max-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     color: #FFFF;
-    background-color: #F5F5F5;
     align-items: center;
     overflow-y: auto;
 `
@@ -67,46 +66,36 @@ export const PainelConteudo = styled.div`
     }
 `
 
-
 export const SpanSeta = styled.span`
     font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
     font-size: 15px;
     color: #1A60C3;
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr; 
-    transition: 0.2s;
     cursor: pointer;
     position: absolute;
     left: 250px;
-    .rotate {
-        transform: rotate(90deg);
-        transition: transform 0.2s ease-in-out;
-    }
-    :hover {
-        /* transform: rotate(90deg); */
-    }
 `
 
 export const Ul = styled.ul`
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease;
+    position: relative;
     &.panel.active {
         max-height: 500px;
-        transition: max-height 0.6s ease-in;
+        transition: max-height 0.6s ease;
     }
+`
+export const RadioInput = styled.input`
+    margin-right: 15px;
 `
 
 export const Li = styled.li`
-    color: black;
-    margin-left: -35px;
+    color: #333333;
+    cursor: pointer;
+    list-style-type: none;
+    margin-left: -20px;
+    padding: 20px 20px 0px 0px;
+    margin-top: 15px;
 `
 export const PainelListaConteudo = styled.ul`
     color: #0a2f62;
@@ -114,14 +103,13 @@ export const PainelListaConteudo = styled.ul`
     font-weight: 400;
     position: relative;
     width: 280px;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
     padding: 21px 0px 23px 51px;
     margin-left: -40px;
-    background-color: #F5F5F5;
-    border: none;
-    transition: .4s;
-    transition: 1s;
     list-style-type: none;
 `
+
+export const LiNormal = styled.li``
+
+export const DivNormal = style.div``
+
+export const UlNormal = styled.ul``
