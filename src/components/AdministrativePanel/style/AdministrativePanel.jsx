@@ -113,3 +113,5 @@ export const LiNormal = styled.li``
 export const DivNormal = style.div``
 
 export const UlNormal = styled.ul``
+
+export const IconeGoogle = styled.i``

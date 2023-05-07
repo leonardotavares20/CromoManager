@@ -11,7 +11,7 @@ import {
   LiNormal,
   RadioInput,
   DivNormal,
-  UlNormal
+  UlNormal,
 } from './style/AdministrativePanel';
 export default AdministrativePanel
 
@@ -35,64 +35,121 @@ function AdministrativePanel() {
   return (
     <PainelAdministrativo>
       <DivNormal>
-        <PainelMenu>Painel</PainelMenu>
+        <PainelMenu> Painel </PainelMenu>
         <PainelListaMenu> Perfil </PainelListaMenu>
         <PainelListaMenu> Serviços </PainelListaMenu>
         <PainelListaMenu> Suporte </PainelListaMenu>
         <PainelListaMenu> Configurações </PainelListaMenu>
       </DivNormal>
       <DivNormal>
-        <PainelConteudo>Conteudo</PainelConteudo>
+        <PainelConteudo> Conteudo </PainelConteudo>
         <UlNormal>
           <PainelListaConteudo className="accordion">
+
             <LiNormal>
               Banner
-              <SpanSeta className={panels.banner ? "active" : ""} onClick={() => togglePanel("banner")} >
+              <SpanSeta //Botao dropdown
+              className={panels.banner ? "active" : ""} 
+              onClick={() => togglePanel("banner")} >
                 <i className="material-icons">
                     {panels.banner ? "expand_more" : "chevron_right"}
                 </i>
               </SpanSeta>
 
               <Ul className={`panel ${panels.banner ? "active" : ""}`}>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Listar Banner </Li>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Cadastrar Banner </Li>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Listar Categoria </Li>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Cadastrar Categoria </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled>
+                  </RadioInput> Listar Banner 
+                </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled>
+                  </RadioInput> Cadastrar Banner 
+                </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled>
+                  </RadioInput> Listar Categoria 
+                </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled>
+                  </RadioInput> Cadastrar Categoria 
+                </Li>
               </Ul>
             </LiNormal>
+
           </PainelListaConteudo>
 
           <PainelListaConteudo className="accordion">
-            <LiNormal>
+
+            <LiNormal> 
               Institucional
-              <SpanSeta className={panels.institucional ? "active" : ""} onClick={() => togglePanel("institucional")} >
-                <i className="material-icons">
+              <SpanSeta  //Botao dropdown
+                className={panels.institucional ? "active" : ""} 
+                onClick={() => togglePanel("institucional")}>
+                  <i className="material-icons">
                     {panels.institucional ? "expand_more" : "chevron_right"}
-                </i>
+                  </i>
               </SpanSeta>
 
               <Ul className={`panel ${panels.institucional ? "active" : ""}`}>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Sobre </Li>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Números </Li>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Controle de qualidade </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled> 
+                  </RadioInput> Sobre 
+                </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled> 
+                  </RadioInput> Números 
+                </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled> 
+                  </RadioInput> Controle de qualidade 
+                </Li>
               </Ul>
             </LiNormal>
+
           </PainelListaConteudo>
 
           <PainelListaConteudo className="accordion">
-            <LiNormal>
+
+            <LiNormal> 
               Empreendimentos
-              <SpanSeta className={panels.empreendimentos ? "active" : ""} onClick={() => togglePanel("empreendimentos")} >
-                <i className="material-icons">
+              <SpanSeta //Botao dropdown
+                className={panels.empreendimentos ? "active" : ""} 
+                onClick={() => togglePanel("empreendimentos")} >
+                  <i className="material-icons">
                     {panels.empreendimentos ? "expand_more" : "chevron_right"}
-                </i>
+                  </i>
               </SpanSeta>
 
               <Ul className={`panel ${panels.empreendimentos ? "active" : ""}`}>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Listar </Li>
-                <Li> <RadioInput type='radio' disabled></RadioInput> Cadastrar </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled>
+                  </RadioInput> Listar 
+                </Li>
+                <Li> 
+                  <RadioInput 
+                    type='radio' 
+                    disabled>
+                  </RadioInput> Cadastrar 
+                </Li>
               </Ul>
             </LiNormal>
+
           </PainelListaConteudo>
         </UlNormal>
       </DivNormal>
