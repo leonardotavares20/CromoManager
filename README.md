@@ -12,7 +12,7 @@
 
 <h2>View the project</h2>
 
-To view the project, open it in your browser on the port: http://localhost:5173/
+* To view the project, open it in your browser on the port: http://localhost:5173/
 
 <h2>Node version</h2>
 
