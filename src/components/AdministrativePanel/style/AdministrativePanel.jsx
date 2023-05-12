@@ -13,6 +13,7 @@ export const PainelAdministrativo = styled.nav`
     color: #FFFF;
     align-items: center;
     overflow-y: auto;
+    grid-area: sidebar;
 `
 // Primeiro Menu
 
@@ -109,8 +110,6 @@ export const PainelListaConteudo = styled.ul`
 `
 
 export const LiNormal = styled.li``
-
-export const DivNormal = style.div``
 
 export const UlNormal = styled.ul``
 

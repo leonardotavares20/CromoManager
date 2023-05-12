@@ -8,6 +8,7 @@ export const ContainerNavBar = styled.header`
     background-color: #FFFFFFCC;
     grid-template-columns:1fr 3fr 1fr;
     border-bottom: 1px solid #21559D80;
+    grid-area: heade;
 `
 export const DivLogo = styled.div`
     display: flex;

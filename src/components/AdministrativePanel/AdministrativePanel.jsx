@@ -10,14 +10,13 @@ import {
   Li,
   LiNormal,
   RadioInput,
-  DivNormal,
   UlNormal,
 } from './style/AdministrativePanel';
 export default AdministrativePanel
 
 function AdministrativePanel() {
 
-  // Funcão para o menu conteudo
+  // Funcão para o menu drop
   
   const [panels, setPanels] = useState({
     banner: false,
@@ -34,14 +33,14 @@ function AdministrativePanel() {
 
   return (
     <PainelAdministrativo>
-      <DivNormal>
+      <div>
         <PainelMenu> Painel </PainelMenu>
         <PainelListaMenu> Perfil </PainelListaMenu>
         <PainelListaMenu> Serviços </PainelListaMenu>
         <PainelListaMenu> Suporte </PainelListaMenu>
         <PainelListaMenu> Configurações </PainelListaMenu>
-      </DivNormal>
-      <DivNormal>
+      </div>
+      <div>
         <PainelConteudo> Conteudo </PainelConteudo>
         <UlNormal>
           <PainelListaConteudo className="accordion">
@@ -152,7 +151,7 @@ function AdministrativePanel() {
 
           </PainelListaConteudo>
         </UlNormal>
-      </DivNormal>
+      </div>
     </PainelAdministrativo>
   );
 }

@@ -7,6 +7,7 @@ export const TableListBanner = styled.section`
     font-family: 'Ubuntu', sans-serif;
     background-color: #D8E3F133;
     box-sizing: border-box;
+    grid-area: main;
 `
 
 export const Cabecalho = styled.div`
